@@ -1,0 +1,32 @@
+@import "./stylesheets/bootstrap";
+@import "./navbar.scss";
+@import "./tables";
+@import "./typography";
+@import "./progress-bars";
+@import "./order-table";
+@import "./details-table";
+@import "./scrollbar";
+@import "./charts";
+@import "./scrolling-nav";
+@import "~slick-carousel/slick/slick.css";
+@import "./day-view";
+@import "./grid";
+@import "./popover";
+@import "./event-details.scss";
+
+body {
+  margin:0; 
+  position:relative; 
+  font-weight: 500;
+}
+
+@media(min-width:1200px){
+  .container{
+    width : 1280px;
+  }
+}
+
+//TODO:  Cleanup nav scss file.  It should be included in application scss and then this can be added to that
+.nav > li:not(.active) > a:hover {
+      text-decoration: underline;
+  }

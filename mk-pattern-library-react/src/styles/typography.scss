@@ -1,0 +1,102 @@
+@import "./stylesheets/bootstrap/_variables";
+
+$font-eleven : 11px;
+$font-xsmall: 9px;
+$font-small: 12px;
+$font-thirteen:13px;
+$font-normal: 14px;
+$font-medium:16px;
+$font-large: 18px;
+$font-xlarge : 20px;
+$font-xxlarge: 25px;
+$font-xxxlarge: 30px;
+$font-huge: 36px;
+
+.text-univ-lt{
+    font-family : 'Univers Next Lt'
+}
+
+.text-univ-rg{
+    font-family : 'Univers Next'
+}
+
+.text-univ-bd{
+    font-family : 'Univers Next Bd'
+}
+
+
+.text-eleven {
+    font-size: $font-eleven;
+}
+.text-xsmall {
+    font-size: $font-xsmall;
+}
+.text-small {
+    font-size: $font-small;
+}
+.text-thirteen{
+    font-size : $font-thirteen;
+}
+.text-normal {
+    font-size: $font-normal;
+}
+.text-medium{
+    font-size: $font-medium;
+}
+.text-large {
+    font-size: $font-large;
+}
+.text-xlarge {
+    font-size: $font-xlarge;
+}
+.text-xxlarge {
+    font-size: $font-xxlarge;
+}
+.text-xxxlarge {
+    font-size: $font-xxxlarge;
+}
+.text-huge {
+    font-size: $font-huge;
+}
+
+.text-action{
+    color : $action-text-blue;
+}
+.text-light {
+    color : $text-light-gray;
+}
+.text-accent {
+    color : $benchmark-teal;
+}
+.text-timestamp {
+    color : $timestamp-gray;
+}
+.text-engagement-gray {
+    color : $engagement-gray;
+}
+.text-investor {
+    color : $roadshow-investor-red;
+    
+}
+
+.text-nav-red{
+    color : $nav-highlight-red;
+}
+
+a.text-investor:hover {
+    color : $roadshow-investor-red;
+    text-decoration: underline;
+    cursor : pointer;
+}
+
+a.underline-link {
+    color : $black;
+    text-decoration: underline;
+    font-size: $font-normal;
+    cursor : pointer;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+

@@ -1,0 +1,31 @@
+{
+  "name": "cra-mrkt-starter",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "apisauce": "^0.14.2",
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "reduxsauce": "^0.7.0",
+    "reselect": "^3.0.1",
+    "mk-pattern-library-react": "file:./mk-pattern-library-react"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "reload-sg": "node cleanPatternLibrary&&npm install --ignore-scripts"
+  }
+}

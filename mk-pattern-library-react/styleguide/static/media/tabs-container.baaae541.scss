@@ -1,0 +1,13 @@
+.tabs-container-tab{
+    padding:8px;
+    color : #557DA7;
+    cursor: pointer;
+}
+
+.tabs-container-tab.active{
+    color:black;
+}
+
+.tabs-container-tab-container{
+    padding:0 8px;
+}

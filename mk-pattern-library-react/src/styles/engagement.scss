@@ -1,0 +1,151 @@
+.engagement-left-divider {
+    border-left:1px solid #D8D8D8;
+
+    &.no-divide-sm{
+        @media (min-width: 992px) {
+            border-left:none;
+        }
+    }
+}
+
+.engagement-right-divider {
+    border-right:1px solid #D8D8D8;
+
+    &.no-divide-sm{
+        @media (min-width:992px) {
+            border-right:none;
+        }
+    }
+}
+
+.engagement-bottom-divider{
+    border-bottom:1px solid #D8D8D8;
+}
+
+.engagement-details-table .react-bs-table .engagement-table-header{
+    padding:0px 0px 12px 0px;
+    background:transparent;
+    border-bottom:1px solid #D8D8D8;
+    border-right:none;
+    border-top:none;
+    height:auto;
+}
+.engagement-details-table .react-bs-table .engagement-table-cell{
+    vertical-align: top;
+    padding:8px 0px;
+    border-top:none;
+    border-bottom:1px solid #D8D8D8;
+    border-right:none;
+}
+
+
+.engagement-details-table{
+
+    & .react-bs-table{
+        margin:0!important;
+    }
+}
+
+.engagement-hoz-divider{
+    border-bottom : 1px solid #E0E0DF;
+}
+.engagement-modal-icon-block{
+    width:20%;
+    float:left;
+}
+.engagement-table .react-bs-container-header table thead tr{
+    
+    th{
+        font-size: 12px;
+        color: #000;
+        line-height: 16px;
+        height: 50px;
+    }
+
+    th:first-child{
+        border-right: 1px solid #D8D8D8;
+        padding-left: 23px;
+    }
+
+    th:nth-child(2){
+        border-right: 1px solid #D8D8D8;
+    }
+}
+
+.engagement-table .react-bs-container-body table tbody tr{
+
+    td{
+        font-size: 12px;
+        color: #000000;
+        vertical-align: middle;
+        line-height: 14px;
+
+    }
+   
+
+    td:first-child{
+        padding-left: 23px;
+    }
+
+    .order-amount{
+        font-weight: bold;
+        padding-right: 10px;
+        display: inline-block;
+        
+    }
+
+    .order-currency{
+        display: inline-block;
+
+    }
+
+}
+
+.react-bs-container-header table thead tr th{
+    color: #000;
+}
+
+#dcm-order-detail{
+    .react-bs-table{
+        margin-left: 0;
+    }
+
+    .table > colgroup + thead > tr:first-child > th{
+        border-top: none;
+    }
+    
+    .details-table .table > thead > tr > th.standard-table-header-spacing{
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+.empty-tab-bg{
+    background-image: url(../images/InvestorEngagementEmptyStateBackgroundDesktop.svg);
+    background-repeat: repeat-y;
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+}
+
+.empty-tab-icon{
+    position: relative;
+    display: block;
+    margin: 135px auto 0;
+}
+
+.tab-msg{
+    position: relative;
+    font-size: 14px; 
+    color: #666666; 
+    line-height: 16px; 
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.enagement-detail-block:last-child{
+    .investor-feedback-divider{
+        border:none;
+        margin:0
+    }
+}

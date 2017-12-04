@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/styled-components/*
+.*/node_modules/findup/*
+.*/node_modules/jss/*
+.*/node_modules/flow-webpack-plugin/*
+
+
+[include]
+[libs]
+[options]
+module.name_mapper.extension='css' -> './flow/CSSModule.js.flow'
+module.name_mapper.extension='styl' -> './flow/CSSModule.js.flow'
+module.name_mapper.extension='png' -> './flow/WebpackAsset.js.flow'
+module.name_mapper.extension='jpg' -> './flow/WebpackAsset.js.flow'
+[lints]

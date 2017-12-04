@@ -1,0 +1,68 @@
+@import "./stylesheets/bootstrap/variables";
+
+
+.navbar > .container {
+  padding : 0 20px;
+}
+
+.navbar-divider {
+    background-color: $navbar-divider;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 3.5px
+}
+.container .navbar-header {
+  width: 100%;
+}
+.container .navbar-nav {
+  width: 100%;
+  padding-right: $navbar-padding-horizontal;
+}
+.navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+.navbar.navbar-default .container {
+  background-color: $navbar-default-bg;
+}
+
+.navbar-underline {
+  > li {
+    margin-right: 25px;
+    @media(min-width:$screen-md){
+      margin-right:40px;
+    }
+  }
+}
+
+.navbar-underline {
+  > li > a {
+    width: 100%;
+    height: 42px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 4px solid transparent;
+  }
+  > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      border-bottom: 4px solid $navbar-default-link-border;
+    }
+  }
+}
+
+.navbar-text.navbar-user {
+  margin-right: 0px;
+  float: right;
+  text-align: right;
+}
+
+.subtext {
+  font-size: $font-size-small;
+}
+
+.navbar-header .navbar-brand {
+  padding: 20.5px;
+}

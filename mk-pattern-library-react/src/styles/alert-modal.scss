@@ -1,0 +1,15 @@
+.alert-modal-dialog{
+    margin:0;
+    height: 100%;
+    width:100%;
+}
+
+.alert-modal-dialog .modal-content{
+    // height:100%;
+    width: 275px;
+    border:none;
+    padding:20px;
+    top:33.33%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}

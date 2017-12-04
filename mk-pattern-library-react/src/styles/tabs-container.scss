@@ -1,0 +1,57 @@
+.tabs-container-tab{
+    padding:8px;
+    color : #557DA7;
+    cursor: pointer;
+}
+
+.tabs-container-tab.active{
+    color:black;
+}
+
+.tabs-container-tab-container{
+    padding:0 8px;
+}
+
+
+.new-tabs-container-tab{
+    padding:8px;
+    color:#000;
+    cursor: pointer;
+    background-color: #ededed;
+    display: inline-block;
+   
+    border-left: 1px solid #cdcdcd;
+    font-size: 14px;
+    line-height: 15px; 
+    text-align: center;
+
+    &:last-child{
+        border-right: 1px solid #cdcdcd;
+    }
+}
+
+.new-tabs-container-tab.active{
+    background-color: #fff;
+    border-top: 2px solid #db0011; 
+    border-bottom: none;
+}
+
+.new-tabs-container-tab-container{
+    margin-bottom: 0;
+}
+
+.new-tab-content{
+    border: 1px solid #cdcdcd;
+    border-top: none;
+}
+
+.new-tab-content .react-bs-table{
+    margin: 0;
+}
+
+
+.new-tab-content .react-bs-table TABLE THEAD TR{
+   &:first-child > TH{
+       border-top: none;
+    }
+}

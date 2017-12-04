@@ -1,0 +1,98 @@
+@import "./stylesheets/bootstrap/_variables";
+
+
+a.list-group-item, button.list-group-item{
+    color : black;
+}
+
+.day-view-cell{
+    border : 1px solid $medium-gray;
+    border-left : none;
+    border-right : none;
+    border-bottom : none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    outline:none;
+    min-height:60px;
+    &.past-event {
+        color : $timestamp-gray!important;
+        & .day-view-event-title{
+            color : $timestamp-gray;
+        }
+    }
+
+    &:last-child{
+        border-bottom:1px solid $medium-gray;
+    }
+
+    & .day-view-event-title{
+        color : $roadshow-investor-red
+    }
+    & .day-view-type{
+        line-height:16px;
+    }
+}
+
+.list-group-item.day-view-cell.day-view-next-event, .list-group-item.day-view-cell.day-view-next-event:hover, .list-group-item.day-view-cell.day-view-next-event:focus{
+    border: 1px solid $roadshow-next-event-red;
+    border-left : none;
+    border-right : none;
+    border-bottom : none;
+}
+
+.meeting-event {
+    color : $nav-highlight-red
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+    background-color : $bg-dark-gray;
+    border-color : $medium-gray;
+    color:white!important;
+    
+
+    & .day-view-event-title{
+        color : white;
+    }
+
+    & .text-timestamp{
+        color : white;
+    }
+    
+}
+
+.next-event-indicator{
+    background-color : $nav-highlight-red;
+    color : white;
+    position: absolute;
+    top:0px;
+    padding-right: 10px;
+    padding-left: 5px;
+    right:0;
+    height:17px;
+
+    & .next-event-indicator-text{
+        vertical-align: middle;
+        color : white;
+    }
+}
+
+button.list-group-item:hover{
+    background-color:white;
+    color : inherit;
+    & .cell-title{
+        text-decoration: underline;
+    }
+}
+
+
+.next-event-indicator-caret{
+    border-left: 17px solid transparent;
+    border-top: 17px solid $nav-highlight-red;
+    position: absolute;
+    left: -17px;
+}
+
+.no-events-indicator{
+    padding:15px 0px;
+    height:60px;
+}

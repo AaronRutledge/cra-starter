@@ -1,0 +1,27 @@
+# HSBC Pattern Library
+#
+# Deployments:
+# https://deployments.mgmt.local/repo/deploy/web.aspnet4mvc/internal/Designs/protos/HSBC/PatternLibrary
+
+type: web.aspnet4mvc
+# fill in the path below with correct path information
+path: internal/Designs/protos/HSBC/PatternLibrary
+ignore:
+  - node_modules
+  - gulpfile.js
+  - app
+  - .tmp
+  - .babelrc
+  - .editorconfig
+  - .gitignore
+  - .npmignore
+  - package.json
+  - dist
+  - test
+environments:
+  acceptance:
+    domain:
+      - designs.markitqa.com
+  production:
+    domain:
+      - designs.markit.com

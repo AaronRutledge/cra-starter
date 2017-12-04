@@ -1,0 +1,30 @@
+.docs-category{
+
+}
+
+.doc-dates{
+    display: inline-block;
+    margin-left: 20px;
+
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.doc-link{
+    display: inherit;
+    margin-left: 35px;
+}
+
+.doc-description{
+    @media(min-width : $screen-sm){
+        margin-left: 23px;
+    }
+    margin-left: 23px;
+    
+}
+.mydocs-body-scroll-container .ps__scrollbar-y-rail{
+    display:none
+}
+
+

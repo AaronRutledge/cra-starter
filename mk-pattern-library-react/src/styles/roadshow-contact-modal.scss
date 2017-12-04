@@ -1,0 +1,45 @@
+
+
+.roadshow-contact-type-header{
+    background: $light-gray-table-header;
+    padding:9px 20px;
+    margin-bottom:30px;
+}
+
+.roadshow-contact-company-header{
+    color : $roadshow-investor-red;
+    padding:0px 20px 17px;
+}
+
+.roadshow-contact-cell{
+    padding: 6px 20px 9px;
+}
+
+// .roadshow-contact-list-person-details{
+//     @media(min-width : $screen-sm){
+//         margin-right:20px;
+//         display:inline-block;
+//         // width:120px;
+//     }
+
+//     &:last-child{
+//         @media(min-width:$screen-sm){
+//             // width:225px;
+//             margin-right:0;
+//         }
+//     }
+// }
+.roadshow-contact-list-person-details-position{
+    @media(min-width : $screen-sm){
+        display:inline-block;
+        width:100px;
+        // margin-right:20px;
+    }
+    @media(min-width: $screen-md){
+        width:335px;
+        // margin-right:20px;
+    }
+}
+.roadshow-contact-list-person-details-team{
+    width:80px;
+}

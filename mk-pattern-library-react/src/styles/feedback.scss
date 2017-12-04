@@ -1,0 +1,110 @@
+.investor-feedback-divider{
+    margin:20px 0px;
+    border-bottom:1px solid $medium-gray;
+}
+
+.investor-feedback-theme-container{
+
+    
+    @media(min-width:$screen-sm){
+        
+        max-width:calc(33.3333% - 20px);
+        float:left;
+        margin-right:20px;
+    }
+}
+
+.theme-block{
+    display: inline-block;
+    margin-right:10px;
+    margin-top:10px;
+    padding:2px 8px;
+}
+
+.theme-highlight-positive{
+    background:rgba(88,137,66,0.2);
+}
+.theme-highlight-negative{
+    background:rgba(219,0,17,0.4);
+}
+.theme-highlight-valuation{
+    background:rgba(231,231,230,1);
+}
+.theme-block-container{
+    position: relative;
+    top:-5px;
+}
+
+.sentiment-block{
+    display: inline-block;
+    padding:1px 8px;
+    // width:80px;
+    color:white;
+    margin-top:10px;
+    
+}
+.sentiment-highlight-positive{
+    background:#588942;
+}
+.sentiment-highlight-negative{
+    background:#DB0011;
+}
+.sentiment-highlight-neutral{
+    background:#7C7C7C;
+}
+.sentiment-highlight-balanced{
+    background:#557DA7;
+}
+.sentiment-highlight-none{
+    background:#FFF;
+    color:black;
+}
+
+.feedback-highlight-text{
+    height: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* styles for '...' */ 
+.block-with-text {
+    /* hide text if it more than N lines  */
+    overflow: hidden;
+    /* for set '...' in absolute position */
+    position: relative; 
+    /* use this value to count block height */
+    line-height: 1.2em;
+    /* max-height = line-height (1.2) * lines max number (3) */
+    max-height: 4.6em; 
+    /* fix problem when last visible word doesn't adjoin right side  */
+    text-align: justify;  
+    /* place for '...' */
+    margin-right: -1em;
+    padding-right: 1em;
+  }
+  /* create the ... */
+  .block-with-text:before {
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+  }
+  /* hide ... if we have text, which is less than or equal to max lines */
+  .block-with-text:after {
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+  }

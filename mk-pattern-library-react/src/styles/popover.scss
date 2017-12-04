@@ -1,0 +1,61 @@
+.popover-header{
+
+}
+.popover-content {
+    padding:0;
+    & .popover-section{
+        padding:20px;
+    }
+    & .popover-spacing-bottom-sm{
+        padding-bottom: 15px;
+    }
+    & .popover-spacing-bottom-md{
+        padding-bottom: 20px;
+    }
+
+    & .popover-spacing-bottom-lg{
+        padding-bottom:30px;
+    }
+}
+.popover{
+    padding:0;
+    width:340px;
+    max-width:none;
+    & .ps__scrollbar-y-rail{ 
+        display: none!important; 
+    }
+  
+}
+.popover-content .popover-divider{
+    margin:0 -20px;
+    height:1px;
+    border-top:1px solid #979797;
+
+    &.divider-sort{
+        border-top:1px solid $sort-gray;
+    }
+}
+
+.popover-dismiss{
+    position: absolute;
+    top:20px;
+    right:15px;
+    cursor:pointer;
+}
+.popover-sort-row{
+    cursor:pointer;
+    font-size:16px;
+    padding:15px 0px;
+    line-height:18px;
+    border-bottom: 1px solid $sort-gray;
+    &.selected{
+        color : #305A85;
+        font-family : 'Univers Next Bd';
+    }
+    &:last-child{
+        border-bottom:none;
+    }
+}
+.popover-link{ 
+    cursor: pointer; 
+}

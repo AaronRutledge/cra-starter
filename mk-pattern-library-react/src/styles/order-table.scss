@@ -1,0 +1,59 @@
+
+.table > thead > tr > th.standard-table-header-spacing{
+	line-height: 14px;
+	padding-bottom:13px;
+	position: relative;
+	padding-right:15px;
+	padding-left:15px;
+	&.orderbook-no-border-top{
+		padding:5px 15px 4px 4px;
+	}
+}
+
+.react-bs-table .react-bs-container-header > table > thead > tr > th.standard-table-header-spacing{
+	vertical-align: baseline;
+	
+}
+
+.table > tbody > tr > td.standard-table-cell{
+	height:27px;
+	padding:0px 15px 0px 15px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	vertical-align: middle;
+	line-height: 26px;
+	outline: none; // prevent blue outline
+	// &:hover{
+	// 	overflow: visible;
+	// 	white-space: normal;
+	// 	height:auto;
+	// }
+	& div{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		line-height: 1;
+		// &:hover{
+		// 	overflow: visible;
+		// 	white-space: normal;
+		// 	height:auto;
+		// }
+
+	}
+	& img{
+		height:15px;
+	}
+
+}
+
+.details-table .table > tbody > tr > td.standard-table-cell{
+	padding : 0px 8px 0px 8px
+}
+
+.orderbook-no-border-top{
+	border-top : none!important;
+}
+
+table {
+	border-collapse: separate;
+}

@@ -1,0 +1,37 @@
+
+.details-table{
+    & .table > thead > tr > th.standard-table-header-spacing{
+        padding:8px;
+    }
+
+    & .text-muted{
+        color : #929292;
+    }
+
+}
+
+.details-table-table tr:last-child td{
+    border-bottom:1px solid #ddd;
+}
+.details-table-tab-container{
+    margin:5px 0px 15px;
+}
+
+.details-table-prepend-index {
+    padding-right: 5px;
+    font-weight: 600;
+    text-align: right;
+    width: 20px;
+    float:left;
+}
+.details-table-prepend-body{
+    overflow: hidden;
+}
+
+.details-table tr:last-child td{
+    border-bottom:1px solid #ddd;
+}
+
+.details-table .table > tbody > tr > td.standard-table-cell{
+    padding-right:8px;
+}

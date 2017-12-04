@@ -1,0 +1,80 @@
+@import "./stylesheets/bootstrap";
+@import "./navbar.scss";
+@import "./tables";
+@import "./typography";
+@import "./progress-bars";
+@import "./order-table";
+@import "./details-table";
+@import "./scrollbar";
+@import "./charts";
+@import "./scrolling-nav";
+@import "~slick-carousel/slick/slick.css";
+@import "./day-view";
+@import "./grid";
+@import "./popover";
+@import "./event-details.scss";
+@import "./roadshow-contact-modal.scss";
+@import "./docs-category.scss";
+@import "./login.scss";
+@import "./feedback.scss";
+@import "./tables.scss";
+@import "./tabs-container.scss";
+@import "./engagement.scss";
+@import "./fullscreen-modal.scss";
+@import "./alert-modal.scss";
+@import "./fixed-data-table.scss";
+@import "./icons.scss";
+
+
+#root{
+  overflow: hidden;
+}
+
+body {
+  margin:0; 
+  position:relative; 
+  font-weight: 500;
+  height:100vh;
+
+}
+
+// .ps__scrollbar-y-rail{ 
+//   display: none!important; 
+// }
+.ps__scrollbar-x-rail{
+  display: none!important;
+}
+@media(min-width:1200px){
+  .container{
+    width : 1280px;
+  }
+}
+
+//TODO:  Cleanup nav scss file.  It should be included in application scss and then this can be added to that
+.nav > li:not(.active) > a:hover {
+      text-decoration: underline;
+  }
+
+.ReactModal__Overlay{
+  z-index: 10001!important;
+}
+
+.zero-pad{
+  padding:0;
+}
+.zero-pad-sm{
+   @media (min-width: $screen-sm-min) {
+    padding:0;
+  }
+}
+
+.ps.ps--theme_default.ps--active-y{
+  position: relative;
+}
+
+.bannerIconContainer:hover {
+    opacity: 1!important;
+  }
+.bannerIconContainer:active, .bannerIconContainer:focus{
+  background: rgba(0,0,0,0.5)!important;
+}

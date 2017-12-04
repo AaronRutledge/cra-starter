@@ -1,0 +1,12 @@
+// Override bootstrap media queries at smaller break points
+.container {
+  @media (min-width: $screen-sm-min) {
+    width: 100%;
+  }
+  @media (min-width: $screen-md-min) {
+    width: 100%;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}

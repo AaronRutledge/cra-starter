@@ -1,0 +1,42 @@
+@import "./stylesheets/bootstrap/variables";
+
+.event-place{
+    background : $bg-light-gray;
+    margin: 10px 0px;
+    padding:18px 0px;
+}
+
+.event-details-divider{
+    height:1px;
+    border-top:1px solid $medium-gray;
+}
+
+.investor-list-cell{
+    border : 1px solid $medium-gray;
+    border-left : none;
+    border-right : none;
+    border-bottom : none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    outline:none;
+    min-height:27px;
+
+    &:last-child{
+        border-bottom:1px solid $medium-gray;
+    }
+
+    &.contact-cell{
+        min-height:51px;
+        margin-left:20px;
+        margin-right:35px;
+        
+        @media (min-width: $screen-sm-min) {
+            margin-right:20px;
+        }
+    }
+}
+
+.event-detail-address{
+    line-height: 16px;
+}
+

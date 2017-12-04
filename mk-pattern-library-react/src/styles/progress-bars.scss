@@ -1,0 +1,29 @@
+@import "./stylesheets/bootstrap/variables";
+.progress.progress-bar-over{
+    background-color : $progress-over-bg;
+}
+
+.progress-bar-over .progress-bar{
+    background-color: $progress-bar-over-bg;
+    border-right:2px solid white;
+}
+
+.status-bar-progress{
+    display: table-cell;
+    width: 100%;
+    margin-bottom: 0px;
+    box-shadow: none;
+    // right:-8px;
+    // position: relative;
+    // top:3px;
+    // @media(min-width:$screen-sm){
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 77%;
+    // }
+    // @media(min-width:$screen-md){
+       
+    //     left:66%;
+	// }
+	
+}

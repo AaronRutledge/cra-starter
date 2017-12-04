@@ -1,0 +1,90 @@
+.scrolling-nav {
+
+
+    & .scrolling-nav-carousel{
+        width:calc(100% - 20px);
+        position: relative;
+    }
+    & .slick-slide:last-child .btn-roadshow{
+        border-right : 1px solid $medium-gray;
+    }
+
+    // .slick-slide {
+    //     width:33%;
+    //     @media(min-width:$screen-sm){
+	// 	width : 20%;
+    //     }
+    //     @media(min-width:$screen-md){
+    //         width : 12.5%;
+    //     }
+    //     @media(min-width:$screen-lg){
+    //         width : 10%;
+    //     }
+    // }
+    .slick-arrow{
+        cursor: pointer;
+        height: calc(50% + 1px);
+        width:20px;
+        position: absolute;
+        left:100%;
+        z-index: 1;
+        
+        background-color:white;
+        box-shadow: -10px -5px 30px 0px rgba(0,0,0,0.3);
+        border: 1px solid $btn-default-border;
+    }
+
+    .slick-arrow.slick-prev:before, .slick-arrow.slick-next:before{
+        position: absolute;
+        top: 0%;
+        left: 25%;
+        height: 100%;
+        width: 50%;
+        background-size: contain;
+        background-position: center;
+     }
+
+    // Prev Arrows
+    .slick-arrow.slick-prev{
+        top:calc(50% - 1px);
+    }
+    
+
+    .slick-arrow.slick-prev:before{
+        content : '';
+        background-image : url('../images/PrevArrow_Dark.svg');
+        background-repeat: no-repeat;
+
+    }
+    .slick-arrow.slick-prev.slick-disabled:before{
+        background-image : url('../images/PrevArrow.svg');
+
+    }
+
+    // Next Arrows
+    .slick-arrow.slick-next{
+        top:0;
+    }
+    .slick-arrow.slick-next:before{
+        content : '';
+        background-image : url('../images/NextArrow_Dark.svg');
+        background-repeat: no-repeat;
+    }
+    .slick-arrow.slick-next.slick-disabled:before{
+        background-image : url('../images/NextArrow.svg');
+
+    }
+
+}
+
+// text-align: center;
+// 	border: 1px solid $btn-default-border;
+// 	cursor: pointer;
+// 	height: 23px;
+// & img{
+// 		height: 70%;
+// 		vertical-align: middle;
+// 	}
+// &:nth-child(2){
+// 		margin-top:-1px; // collapse border
+// 	}
