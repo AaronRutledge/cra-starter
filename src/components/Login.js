@@ -3,6 +3,7 @@ import {
     Redirect
 } from 'react-router-dom';
 import { connect } from 'react-redux';
+import {requestStockQuote} from '../actions/StockQuoteActions';
 import { Grid, Button, Col, Row } from 'react-bootstrap';
 
 class Login extends React.Component {
@@ -15,6 +16,9 @@ class Login extends React.Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.login = this.login.bind(this);
+    }
+    componentDidMount(){
+        this.props.requestStockQuote('TSLA');
     }
 
     login(event) {
@@ -65,6 +69,7 @@ const mapDispatchToProps = dispatch => ({
     // attemptAuthentication: (username, userData) => dispatch(attemptAuthentication(username, userData)),
     // requestAuthTokenPost: (user, password) => dispatch(requestAuthTokenPost(user, password)),
     // requestAuthTokenGet: () => dispatch(requestAuthTokenGet()),
+    requestStockQuote: (stock) =>dispatch(requestStockQuote(stock))
 
 });
 
